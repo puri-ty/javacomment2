@@ -3,10 +3,11 @@ dropdownButtonsის კლასი დოკუმენტში არი�
 
 for (var i = 0; i < dropdownButtons.length; i++) { /* იწყება ლუპი. სადაც ინკრიმენტის საწყისი მნიშვნელობაა 0,
 ნაკლებია ცვლადის მასივის სიგრძეზე და იზრდება ერთით */
-    dropdownButtons[i].addEventListener("click", function ()/*ცვლადის ყოველ ინკრიმენტს ენიჭება ივენთი
+    dropdownButtons[i].addEventListener("click", function (){/*ცვლადის ყოველ ინკრიმენტს ენიჭება ივენთი
     click ივენთების სიიდან */
     //dropdownList.style.display = "flex";
     this.parentElement.getElementsByClassName("dropdown-list")[0].style.display = "flex";
+    }
 ) //იმ ელემენტის, რომელმაც გამოიწვია ივენთი, მშობელი ელემენტის კლასია dropdown-list და დისფლეი ფლექსი
 }
 
